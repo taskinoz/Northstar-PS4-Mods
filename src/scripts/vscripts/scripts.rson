@@ -865,6 +865,7 @@ Scripts:
 	ui/menu_community.nut
 	ui/menu_credits.nut
 	ui/menu_dev.nut
+	ui/menu_direct_connect.nut
 	ui/menu_test.nut
 	ui/menu_dialog.nut
 	ui/menu_eula_dialog.nut

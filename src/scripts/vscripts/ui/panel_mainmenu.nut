@@ -79,6 +79,9 @@ void function InitMainMenuPanel()
 	Hud_AddEventHandler( file.mpButton, UIE_CLICK, OnPlayMPButton_Activate )
 	file.fdButton = AddComboButton( comboStruct, headerIndex, buttonIndex++, "#GAMEMODE_COOP" )
 	Hud_AddEventHandler( file.fdButton, UIE_CLICK, OnPlayFDButton_Activate )
+	// Direct Connect Menu
+	file.dcButton = AddComboButton( comboStruct, headerIndex, buttonIndex++, "Direct Connect" )
+	Hud_AddEventHandler( file.dcButton, UIE_CLICK, AdvanceMenuEventHandler( GetMenu( "DirectConnect" ) ) )
 
 	headerIndex++
 	buttonIndex = 0
