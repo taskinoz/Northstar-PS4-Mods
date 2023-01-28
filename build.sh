@@ -29,7 +29,7 @@ else
 fi
 
 # make dir ignore if exists
-mkdir -p ./plugin/CUSA04013/vpk_ps4
+mkdir -p ./plugins/CUSA04013/vpk_ps4
 
-# Move to plugin folder
-mv ./*.vpk ./plugin/CUSA04013/vpk_ps4
+# Move to plugins folder
+mv ./*.vpk ./plugins/CUSA04013/vpk_ps4
