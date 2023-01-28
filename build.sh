@@ -10,13 +10,26 @@ cp ./vpks/*.vpk ./
 wait
 
 # Build Frontend VPKS
-RSPNVPK englishclient_frontend.bsp.pak000_dir.vpk -d ./src -s
+if [ -d "./frontend" ]
+then
+    echo "Building Frontend VPK"
+    RSPNVPK englishclient_frontend.bsp.pak000_dir.vpk -d ./frontend -s
+else
+    echo "Frontend VPK Ignored"
+fi
+
 
 # Build Multiplayer VPKS
-RSPNVPK englishclient_frontend.bsp.pak000_dir.vpk -d ./src -s
+if [ -d "./mp_common" ]
+then
+    echo "Building Multiplayer VPK"
+    RSPNVPK englishclient_mp_common.bsp.pak000_dir.vpk -d ./mp_common -s
+else
+    echo "Multiplayer VPK Ignored"
+fi
 
 # make dir ignore if exists
-mkdir -p ../titanfall-plugin/CUSA04013/vpk_ps4
+mkdir -p ./plugin/CUSA04013/vpk_ps4
 
 # Move to plugin folder
-mv ./*.vpk ../titanfall-plugin/CUSA04013/vpk_ps4
+mv ./*.vpk ./plugin/CUSA04013/vpk_ps4
