@@ -82,7 +82,7 @@ void function InitMainMenuPanel()
 	Hud_AddEventHandler( file.fdButton, UIE_CLICK, OnPlayFDButton_Activate )
 	// Direct Connect Menu
 	file.dcButton = AddComboButton( comboStruct, headerIndex, buttonIndex++, "Direct Connect" )
-	Hud_AddEventHandler( file.dcButton, UIE_CLICK, AdvanceMenuEventHandler( GetMenu( "DirectConnect" ) ) )
+	Hud_AddEventHandler( file.dcButton, UIE_CLICK, AdvanceMenuEventHandler( GetMenu( "DirectConnectMenu" ) ) )
 
 	headerIndex++
 	buttonIndex = 0

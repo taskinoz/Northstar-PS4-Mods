@@ -1,4 +1,4 @@
-global function DirectConnectMenu_Init
+global function InitDirectConnectMenu
 
 struct
 {
@@ -6,7 +6,7 @@ struct
 } file
 
 
-void function DirectConnectMenu_Init()
+void function InitDirectConnectMenu()
 {
   file.menu = GetMenu( "DirectConnectMenu" )
 

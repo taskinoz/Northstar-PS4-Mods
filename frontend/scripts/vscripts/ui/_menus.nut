@@ -964,7 +964,7 @@ void function InitMenus()
 #endif
 
 	// Direct Connect Menu
-	AddMenu( "DirectConnect", $"resource/ui/menus/direct_connect.menu", DirectConnectMenu_Init )
+	AddMenu( "DirectConnectMenu", $"resource/ui/menus/direct_connect.menu", InitDirectConnectMenu )
 
 	AddMenu( "InGameMPMenu", $"resource/ui/menus/ingame_mp.menu", InitInGameMPMenu )
 	AddMenu( "InGameSPMenu", $"resource/ui/menus/ingame_sp.menu", InitInGameSPMenu )
