@@ -14,6 +14,7 @@ struct
 	array<void functionref()> spButtonFuncs
 	var mpButton
 	var fdButton
+	var dcButton
 	void functionref() mpButtonActivateFunc = null
 	var buttonData
 	array<var> menuButtons
