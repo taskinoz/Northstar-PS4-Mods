@@ -16,6 +16,7 @@ then
     RSPNVPK englishclient_frontend.bsp.pak000_dir.vpk -d ./frontend -s
 else
     echo "Frontend VPK Ignored"
+    rm ./englishclient_frontend.bsp.pak000_dir.vpk
 fi
 
 
@@ -26,6 +27,7 @@ then
     RSPNVPK englishclient_mp_common.bsp.pak000_dir.vpk -d ./mp_common -s
 else
     echo "Multiplayer VPK Ignored"
+    rm ./englishclient_mp_common.bsp.pak000_dir.vpk
 fi
 
 # make dir ignore if exists
